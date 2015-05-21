@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Aromicon_Google_Universal_Analytics</name>
+    <version>1.2.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.aromicon.de/magento-download-extensions-modules/de/license">COMMERCIAL SOFTWARE LICENSE (v1.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Adds new Google Universal Analytics to Magento Store.</summary>
+    <description>Adds new Google Universal Analytics to Magento Store.</description>
+    <notes>Fixing JS Error on Success Page&#xD;
+Adding Custom Dimension and Metrics for Products&#xD;
+Adding Custom Dimension and Metrics for Customers&#xD;
+Adding Remarketing (displayfeatures)&#xD;
+</notes>
+    <authors><author><name>Stefan Richter</name><user>aromicon_de</user><email>kontakt@aromicon.com</email></author></authors>
+    <date>2014-05-22</date>
+    <time>19:03:19</time>
+    <contents><target name="mage"><dir name="app"><dir name="code"><dir name="community"><dir name="Aromicon"><dir name="Gua"><dir><dir name="Block"><file name="Gua.php" hash="3dcc6bf9d713d6ffe79940437bee931b"/></dir><dir name="Helper"><file name="Data.php" hash="892999bec44a25b0e58c9e00373c0d7d"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Addto.php" hash="14d18fae25ecee83c1a5e872c33db83b"/><file name="Orderid.php" hash="90fcb94f06e986d19cc0c050f655d0c0"/></dir></dir></dir></dir><dir name="etc"><file name="config.xml" hash="5c3f06a3a15ed905af4311030d0a2bf2"/><file name="system.xml" hash="3287f976e3ffa81fb7b155f8edee44aa"/></dir><dir name="sql"><dir name="aromicon_gua_setup"><file name="mysql4-install-1.0.0.php" hash="4bbce7f9d21a131d0aefc73156c87e36"/></dir></dir></dir></dir></dir></dir></dir><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="aromicon"><dir name="gua"><file name="gua.phtml" hash="5fe76b89d678e812f63baa118cfffa6a"/></dir></dir></dir><dir name="layout"><file name="aromicon_gua.xml" hash="884de73b75c9e8ff9144dbf7b936225e"/></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Aromicon_Gua.xml" hash="cbaa405a82a74fe32c6821e3342a3b7d"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>7.0.0</max></php></required></dependencies>
+</package>
