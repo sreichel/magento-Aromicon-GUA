@@ -1,5 +1,5 @@
 {
-	"name": "maxxcount/mx-pricerule-cron",
+	"name": "aromicon/google-universal-analytics",
 	"version": "1.2.0",
 	"type": "magento-module",
 	"description": "Adds new Google Universal Analytics to Magento Store.",
