@@ -38,32 +38,11 @@
             </updates>
         </layout>
     </frontend>
-    <adminhtml>
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <aromicon_gua>
-                                            <title>Aromicon Google Universal Analytics Config Section</title>
-                                        </aromicon_gua>
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>
-    </adminhtml>
     <default>
-        <aromicon_gua>
-            <ecommerce>
+        <google>
+            <aromicon_gua_ecommerce>
                 <transaction_id>id</transaction_id>
-            </ecommerce>
-        </aromicon_gua>
+            </aromicon_gua_ecommerce>
+        </google>
     </default>
 </config>
