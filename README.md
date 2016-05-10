@@ -27,3 +27,23 @@ Google has marked their Google Universal Analytics as stable now and recommends 
 
 ## Magento Connect: 
 http://www.magentocommerce.com/magento-connect/google-universal-analytics-1.html
+
+## Installation:
+
+### Via modman
+```
+modman clone https://github.com/sreichel/magento-Aromicon-GUA.git
+```
+### Via composer:
+```
+{
+    "require": {
+        "aromicon/google-universal-analytics": "*",
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/sreichel/magento-Aromicon-GUA.git"
+        }
+    ]
+}
