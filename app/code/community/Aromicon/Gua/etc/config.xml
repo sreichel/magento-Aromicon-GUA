@@ -21,13 +21,6 @@
                 <class>Aromicon_Gua_Helper</class>
             </aromicon_gua>
         </helpers>
-        <resources>
-            <aromicon_gua_setup>
-                <setup>
-                    <module>Aromicon_Gua</module>
-                </setup>
-            </aromicon_gua_setup>
-        </resources>
     </global>
     <frontend>
         <layout>
