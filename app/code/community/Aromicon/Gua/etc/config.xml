@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Aromicon_Gua>
-            <version>1.2.1</version>
+            <version>1.2.2</version>
         </Aromicon_Gua>
     </modules>
     <global>
@@ -21,6 +21,27 @@
                 <class>Aromicon_Gua_Helper</class>
             </aromicon_gua>
         </helpers>
+        <resources>
+            <aromicon_gua_setup>
+                <setup>
+                    <module>Aromicon_Gua</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </aromicon_gua_setup>
+            <aromicon_gua_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </aromicon_gua_write>
+            <aromicon_gua_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </aromicon_gua_read>
+        </resources>
     </global>
     <frontend>
         <layout>
