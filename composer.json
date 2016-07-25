@@ -6,7 +6,7 @@
     "homepage": "https://github.com/sreichel/magento-Aromicon-GUA",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
-    }
+    },
     "authors": [
         {
             "name": "Stefan Richter",
