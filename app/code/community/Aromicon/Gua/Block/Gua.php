@@ -15,8 +15,8 @@ class Aromicon_Gua_Block_Gua extends Mage_Core_Block_Template
 
     public function isActive()
     {
-        if(Mage::getStoreConfigFlag('google/aromicon_gua_general/enable')
-            && Mage::getStoreConfig('google/aromicon_gua_general/add_to') == $this->getParentBlock()->getNameInLayout()){
+        if (Mage::getStoreConfigFlag('google/aromicon_gua_general/enable')
+            && Mage::getStoreConfig('google/aromicon_gua_general/add_to') == $this->getParentBlock()->getNameInLayout()) {
                 return true;
         }
         return false;
@@ -25,8 +25,8 @@ class Aromicon_Gua_Block_Gua extends Mage_Core_Block_Template
     public function isEcommerce()
     {
         $successPath =  Mage::getStoreConfig('google/aromicon_gua_ecommerce/success_url') != "" ? Mage::getStoreConfig('google/aromicon_gua_ecommerce/success_url') : '/checkout/onepage/success';
-        if(Mage::getStoreConfigFlag('google/aromicon_gua_ecommerce/enable')
-            && strpos($this->getRequest()->getPathInfo(), $successPath) !== false){
+        if (Mage::getStoreConfigFlag('google/aromicon_gua_ecommerce/enable')
+            && strpos($this->getRequest()->getPathInfo(), $successPath) !== false) {
                 return true;
         }
         return false;
@@ -35,8 +35,8 @@ class Aromicon_Gua_Block_Gua extends Mage_Core_Block_Template
     public function isCheckout()
     {
         $checkoutPath =  Mage::getStoreConfig('google/aromicon_gua_ecommerce/checkout_url') != "" ?  Mage::getStoreConfig('google/aromicon_gua_ecommerce/checkout_url') : '/checkout/onepage';
-        if(Mage::getStoreConfigFlag('google/aromicon_gua_ecommerce/funnel_enable')
-            && strpos($this->getRequest()->getPathInfo(), $checkoutPath) !== false){
+        if (Mage::getStoreConfigFlag('google/aromicon_gua_ecommerce/funnel_enable')
+            && strpos($this->getRequest()->getPathInfo(), $checkoutPath) !== false) {
             return true;
         }
         return false;
@@ -62,7 +62,7 @@ class Aromicon_Gua_Block_Gua extends Mage_Core_Block_Template
      */
     public function getOrder()
     {
-        if(!isset($this->_order)){
+        if (!isset($this->_order)) {
             $orderId = Mage::getSingleton('checkout/session')->getLastOrderId();
             $this->_order = Mage::getModel('sales/order')->load($orderId);
         }
